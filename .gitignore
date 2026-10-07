@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.env.local
+knowledge_bases/docs/*.pdf
+.DS_Store
+._*
+.vscode/
+.idea/
+.orchestrate/
+.wxo/
+*.log

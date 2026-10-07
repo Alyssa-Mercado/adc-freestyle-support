@@ -1,0 +1,12 @@
+spec_version: v1
+kind: knowledge_base
+name: freestyle_libre_troubleshooting_guide
+description: >
+  Step-by-step troubleshooting guides for FreeStyle Libre sensor errors,
+  sensor adhesion failures, reader device issues, and mobile app problems.
+  Used by the Sensor Troubleshooting Agent.
+documents:
+  - docs/sensor-error-codes-guide.pdf
+  - docs/sensor-adhesion-troubleshooting.pdf
+  - docs/reader-device-troubleshooting.pdf
+  - docs/mobile-app-troubleshooting.pdf

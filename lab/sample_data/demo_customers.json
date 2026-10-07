@@ -1,0 +1,125 @@
+{
+  "customers": [
+    {
+      "id": "CUST-001",
+      "scenario": "Sensor Fell Off Early",
+      "customerInfo": {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "email": "jane.doe@example.com",
+        "phone": "312-555-0192"
+      },
+      "productInfo": {
+        "productModel": "FreeStyle Libre 3",
+        "sensorSerialNumber": "AB12345678",
+        "lotNumber": "XY-990011",
+        "sensorStartDate": "2026-09-10"
+      },
+      "issueInfo": {
+        "failureDate": "2026-09-14",
+        "failureDescription": "Sensor adhesive separated from skin during swimming on day 4. No error codes displayed.",
+        "deviceErrorCodes": [],
+        "documentIds": []
+      },
+      "eligibilityResult": {
+        "eligibilityStatus": "Eligible",
+        "justification": "Sensor worn for 4 days and detached without reported physical damage. Rule 1 applies.",
+        "policyReference": "freestyle-libre-replacement-policy, Section 3.1",
+        "confidenceScore": 0.95
+      },
+      "demoScript": [
+        "My FreeStyle Libre 3 sensor fell off after only 4 days. I think I need a replacement.",
+        "No, I didn't have any lotion or sunscreen on when I applied it.",
+        "The edges started lifting after I went swimming. It fell off the next morning.",
+        "Yes I'd like to request a replacement please.",
+        "Jane Doe, jane.doe@example.com, 312-555-0192",
+        "Serial number AB12345678, lot number XY-990011, applied 2026-09-10",
+        "It fell off on 2026-09-14. Sensor adhesive separated during swimming. No error codes.",
+        "Yes everything looks correct, please submit.",
+        "Can you check the status of my case?"
+      ]
+    },
+    {
+      "id": "CUST-002",
+      "scenario": "Sensor Failure with Error Code",
+      "customerInfo": {
+        "firstName": "Michael",
+        "lastName": "Torres",
+        "email": "m.torres@example.com",
+        "phone": "773-555-0847"
+      },
+      "productInfo": {
+        "productModel": "FreeStyle Libre 2",
+        "sensorSerialNumber": "CD98765432",
+        "lotNumber": "AB-112233",
+        "sensorStartDate": "2026-09-20"
+      },
+      "issueInfo": {
+        "failureDate": "2026-09-23",
+        "failureDescription": "Sensor displayed E-3 error on day 3 and stopped providing readings.",
+        "deviceErrorCodes": ["E-3"],
+        "documentIds": []
+      },
+      "eligibilityResult": {
+        "eligibilityStatus": "Eligible",
+        "justification": "Confirmed sensor failure with error code E-3 on day 3 of the wear period.",
+        "policyReference": "freestyle-libre-warranty-policy, Section 2.4",
+        "confidenceScore": 0.98
+      },
+      "demoScript": [
+        "My FreeStyle Libre 2 sensor is showing an E-3 error and stopped giving readings.",
+        "It started on day 3. The error code says E-3.",
+        "I tried re-scanning 3 times but it keeps showing the same error.",
+        "Yes I need a replacement.",
+        "Michael Torres, m.torres@example.com, 773-555-0847",
+        "Serial CD98765432, lot AB-112233, applied 2026-09-20",
+        "Error started 2026-09-23. Sensor showing E-3, completely stopped reading. Error code E-3.",
+        "Yes that's all correct, please go ahead."
+      ]
+    },
+    {
+      "id": "CUST-003",
+      "scenario": "Inaccurate Readings",
+      "customerInfo": {
+        "firstName": "Priya",
+        "lastName": "Patel",
+        "email": "priya.patel@example.com",
+        "phone": "847-555-0334"
+      },
+      "productInfo": {
+        "productModel": "FreeStyle Libre 3",
+        "sensorSerialNumber": "EF11223344",
+        "lotNumber": "CD-445566",
+        "sensorStartDate": "2026-09-28"
+      },
+      "issueInfo": {
+        "failureDate": "2026-10-01",
+        "failureDescription": "Sensor readings appear 30-40 points lower than fingerstick results over 2 days.",
+        "deviceErrorCodes": [],
+        "documentIds": []
+      },
+      "eligibilityResult": {
+        "eligibilityStatus": "Needs Review",
+        "justification": "Inaccurate readings within wear window with no error code. Requires specialist review.",
+        "policyReference": "freestyle-libre-replacement-policy, Section 4.2",
+        "confidenceScore": 0.75
+      },
+      "demoScript": [
+        "My sensor readings seem way off. They're about 35 points lower than my fingerstick test.",
+        "No, I'm not in the warm-up period. I applied it 3 days ago.",
+        "I've checked the placement, it's on the back of my upper arm and looks flat.",
+        "This has been happening consistently for 2 days now.",
+        "Yes I'd like to report this and request a review."
+      ]
+    },
+    {
+      "id": "CUST-004",
+      "scenario": "Case Status Lookup",
+      "demoScript": [
+        "I want to check on my existing support case.",
+        "My case number is CASE-20261001-00001",
+        "Thank you. When will my replacement arrive?"
+      ]
+    }
+  ]
+}

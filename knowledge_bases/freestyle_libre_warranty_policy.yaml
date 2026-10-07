@@ -1,0 +1,10 @@
+spec_version: v1
+kind: knowledge_base
+name: freestyle_libre_warranty_policy
+description: >
+  Abbott's official warranty terms, coverage periods, claim conditions, and
+  exclusions for FreeStyle Libre sensors and reader devices.
+  Used by the Eligibility Agent.
+documents:
+  - docs/freestyle-libre-warranty-policy-2024.pdf
+  - docs/sensor-warranty-exclusions.pdf

@@ -1,0 +1,11 @@
+spec_version: v1
+kind: knowledge_base
+name: freestyle_libre_replacement_policy
+description: >
+  FreeStyle Libre sensor replacement eligibility criteria, eligibility matrix,
+  replacement timelines, proof-of-purchase requirements, and manual review
+  procedures. Used by the Eligibility Agent.
+documents:
+  - docs/sensor-replacement-policy-2024.pdf
+  - docs/replacement-eligibility-matrix.pdf
+  - docs/proof-of-purchase-requirements.pdf
